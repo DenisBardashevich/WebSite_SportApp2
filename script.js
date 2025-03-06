@@ -110,9 +110,9 @@ document.addEventListener("DOMContentLoaded", function () {
   // Находим все кнопки "Read More"
   const readMoreBtns = document.querySelectorAll(".read-more-btn");
   // Находим все модальные окна
-  const modalOverlays = document.querySelectorAll(".modal-overlay");
+  const modalOverlays = document.querySelectorAll(".Transforming-overlay");
   // Находим все кнопки закрытия
-  const closeModalBtns = document.querySelectorAll(".close-modal-btn");
+  const closeModalBtns = document.querySelectorAll(".close-Transforming-btn");
 
   // Открытие модального окна
   readMoreBtns.forEach((btn) => {
@@ -128,7 +128,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Закрытие модального окна
   closeModalBtns.forEach((btn) => {
     btn.addEventListener("click", function () {
-      const modal = btn.closest(".modal-overlay"); // Находим ближайшее модальное окно
+      const modal = btn.closest(".Transforming-overlay"); // Находим ближайшее модальное окно
       if (modal) {
         modal.style.display = "none"; // Скрываем модальное окно
       }
@@ -169,8 +169,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 document.addEventListener('DOMContentLoaded', () => {
-  const tabs = document.querySelectorAll('.about-tabs__button');
-  const tabContents = document.querySelectorAll('.about-tabs__tab');
+  const tabs = document.querySelectorAll('.about-btn1__button');
+  const tabContents = document.querySelectorAll('.about-btn1__tab');
 
   if (tabs.length > 0 && tabContents.length > 0) {
     tabs.forEach((tab) => {
